@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class ="logo">
+                <a href="#">Lautaro</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()" >
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Seccion Inicio-->
+    <section id ="Inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenido-img">
+                <img src="Imagenes/steve.jpg" alt="">
+            </div>
+            <h1>Lautaro Tome</h1>
+            <h2>Ingeniero en Imagen y Sonido</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--Seccion Sobre Mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-section">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Lautaro Tome.</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Error, mollitia illum. Sit adipisci expedita dolores. Enim magni molestiae voluptatibus ex quae rerum, 
+            maxime nam neque nesciunt ab temporibus rem hic?</p>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li>
+                        <strong>Cumpleaños</strong>
+                        15-01-1974
+                    </li>
+                    <li>
+                        <strong>Teléfono</strong>
+                        1140526072
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        leomtome@gmail.com
+                    </li>
+                    <li>
+                        <strong>Website</strong>
+                        www.ejemplo.com
+                    </li>
+                    <li>
+                        <strong>Direccion</strong>
+                        Acevedo 1017, Lomas del Mirador, Buenos Aires
+                    </li>
+                    <li>
+                        <strong>Cargo</strong>
+                        <span>Ingeniero</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Intereses</h3>
+                <div class="contenedor-intereses">
+                    <div class="interes">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>JUEGOS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span>MUSICA</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>VIAJAR</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-brands fa-apple"></i>
+                        <span>MAC OS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-futbol"></i>
+                        <span>DEPORTE</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-car"></i>
+                        <span>AUTOS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-book"></i>
+                        <span>LIBROS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-camera-retro"></i>
+                        <span>FOTOS</span>
+                    </div>
+                </div>
+                <button>Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"> </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div class="contenido-section">
+            <h2>CONTACTO</h2>
+        </div>
+        <div class="fila">
+            <!--Formulario-->
+            <div class="col">
+                <input type="text" placeholder="Tu nombre">   
+                <input type="text" placeholder="Número Teléfonico">
+                <input type="text" placeholder="Dirección de correo">
+                <input type="text" placeholder="Tema">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button>
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+            <div class="col">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Acevedo 4017, Lomas del Mirador, Buenos Aires
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            Llamame al 1140526072  
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: leomtome@gmail.com
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    
+    </section>
+    <script src="script.js"></script>
+
+</body>
+</html>
